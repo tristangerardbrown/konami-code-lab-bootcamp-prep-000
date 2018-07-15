@@ -22,4 +22,4 @@ const codes = [
           window.alert("Hurray!");
           idx = 0}
       });
-      
+    }
