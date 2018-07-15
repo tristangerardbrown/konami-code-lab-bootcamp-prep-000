@@ -11,20 +11,23 @@ const codes = [
   "a"
 ];
 
-function init() {
- var index = 0
- document.body.addEventListener('keydown', function(e) {
-    const key = parseInt(e.which || e.detail)
+  init();
 
-    if (code[index] === key) {
-      index++
+    function init() {
 
-      if (index === code.length - 1) {
-        alert('hurray!')
-        index = 0
-      }
-    } else {
-      index = 0
+        var index = 0;
+        const getElement = document.querySelector('body');
+
+        getElement.addEventListener('keydown', function(e) {
+            if (code[index] === e.which || code[index] === e.detail) {
+                index++;
+
+                if (index === code.length) {
+                    alert("CHEAT EXECUTED!!");
+                    index = 0;
+                }
+            } else {
+                index = 0;
+            }
+        })
     }
-  })
- 	 }
