@@ -21,4 +21,5 @@ const codes = [
         if (idx === codes.length) {
           window.alert("Hurray!");
           idx = 0}
-          
+      });
+      
