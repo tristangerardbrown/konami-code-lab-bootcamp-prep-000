@@ -14,20 +14,4 @@ const codes = [
   init();
 
     function init() {
-
-        var index = 0;
-        const getElement = document.querySelector('body');
-
-        getElement.addEventListener('keydown', function(e) {
-            if (code[index] === e.which || code[index] === e.detail) {
-                index++;
-
-                if (index === code.length) {
-                    alert("CHEAT EXECUTED!!");
-                    index = 0;
-                }
-            } else {
-                index = 0;
-            }
-        })
-    }
+      let idx = 0
